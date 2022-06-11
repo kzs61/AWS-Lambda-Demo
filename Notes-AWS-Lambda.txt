@@ -1,0 +1,26 @@
+AWS Lambda notes
+
+1. AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually 
+any type of application or backend service without provisioning or managing servers. 
+You can trigger Lambda from over 200 AWS services and software as a service (SaaS) applications, 
+and only pay for what you use.
+
+2. All you need is to choose Runtime Environment 
+
+3. A runtime is a version of a programming language or framework that you can use to write Lambda
+ functions. Lambda supports runtime versions for Node.js, Python, Ruby, Go, Java, C# (.NET Core), 
+ and PowerShell (.NET Core)
+
+
+Task / TO DO:
+Build Cost Optimized Infrastructure.
+Current Infrastructure there are 2 Environments: 1) Dev and 2) Prod 
+Prod Environment is a critical Environment. Target is to have Zero Downtime in Prod Environment
+But Unlike to Prod Environment Dev Environment is non critical. It means you can start and stop instances.
+In Dev Environment you do development everyday from 9 am to 6 pm. 
+
+In order to achieve this solution good option is to use Lambda Function. 
+
+4. How will we trigger (run) Lambda Function? Answer: CloudWatch
+
+5. Reason we are mostly using Python with Lambda because AWS has awesome SDK which is BOTO3.
